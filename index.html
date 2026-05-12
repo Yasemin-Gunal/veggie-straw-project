@@ -58,8 +58,8 @@
       
         h3 {
         font-family: Koho; 
-        color: #CC2F5C;
-        font-size: 55px;
+        color: #65FFDB;
+        font-size: 45px;
 /*         width: 50%; */
       }
       
@@ -80,6 +80,19 @@
       }
       
       
+      #titleGrid {
+        
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        margin: auto auto;
+      }
+      
+      .titleContent {
+        margin: auto auto;
+        width: 40%;
+        
+      }
+ 
       
       #logoGrid {
         display: grid;
@@ -89,40 +102,24 @@
       
       .logoContent {
         margin: auto auto;
-        width: 80%;
+        width: 50%;
+        
       }
       
- 
-/*       
-      #mainContent {
+       #packageGrid {
         display: grid;
-        grid-template-columns: auto auto;
-        align-items: center;
-        justify-content: center;
-        justify-items: start;
-        gap: 100px;
-  
-        margin-bottom: 90px;
+        grid-template-columns: 33% 33% 33%;
+
       }
       
-
-      .gallery {
-        max-width: 600px;
+      .packageContent {
+        margin: 40px auto;
+        
+        width: 50%;
+        
       }
-
-      .content-txt {
-        width: 600px;
-      }
-
-        #mainContent p {
-        width: 100%;
-
-        margin: 0 auto;
-        text-align: left;
-      }
- */
-
-     
+      
+      
   
       
       /* footer */
@@ -239,21 +236,68 @@
     
     <div id="mainContent">
       
+      <div id="titleGrid">
+      <img src="OGLogo.jpeg" class="titleContent" alt="placeholder">
+      
         <h1 id="veg" style="cursor:pointer;">
           RE-BRAND PROJECT
         </h1>
+      
+      <img src="fullLogo.png" class="titleContent" alt="placeholder">
+      </div>
       
        <p>
         I was tasked to create an entirely new brand for the product Garden Veggie Straws.
       </p>
       
-      <h3>
-        THE BIG IDEA
-      </h3>
-          
+      
+      <div class="designsGrid"> 
+        <h2>
+          LOGO PROCESS
+        </h2>
+        <p>
+          Tomato, Potato, and spinach...
+          <br>
+          Iconic flavors? Make it a cute, bright, mascot!
+        </p>
+
+        <img width="60%" src="logoWips.PNG"  alt="placeholder">
+
+        <div id="logoGrid">
+          <img class="logoContent" src="fullLogo.png" alt="placeholder">
+          <img class="logoContent" style="filter:invert(1)" src="BWfullLogo.png" alt="placeholder">
+          <img class="logoContent" src="veggiestrawlogo.png" alt="placeholder">
+          <img class="logoContent" style="filter:invert(1)" src="BWveggiestrawlogo.png" alt="placeholder">
+        </div>
+      </div>
+      
+     <div class="designsGrid"> 
+        <h2>
+          PACKAGE DESIGN PROCESS
+        </h2>
+
+        <p>
+          The original design is cluttered and doesn't stand out. Lets fix that!
+        </p>
+
+
+
+        <div id="packageGrid">
+          <img class="packageContent" src="packageWIP1.png" alt="placeholder">
+          <img class="packageContent" src="packageWIP2.png" alt="placeholder">
+          <img class="packageContent" src="packageWIP4.png" alt="placeholder">
+        </div>
+        <img src="packageRedesign.png" height="70%" alt="placeholder">
+      </div> 
+      
+      
       <h2>
-        "SECRETLY HEALTHY"
+        THE BIG IDEA
       </h2>
+          
+      <h3 style=" color: #65FFDB;">
+        "SECRETLY HEALTHY"
+      </h3>
       
       <p>
         Garden Veggie Straws are going off of the idea that they are a healthier replacement for your average junk food snack (mainly potato chips.)
@@ -262,55 +306,38 @@
       </p>
       
       <div id="brandStory">
-        <h3>
+        <h2>
           BRAND STORY
-        </h3>
+        </h2>
         <p>
           Tricking your kid into eating healthy is a struggle for many parents. Lets can we encourage healthy habits in secret.
         </p>
       </div>
       
+        <h2>
+        SLOGAN
+      </h2>
+      
       <h3>
-        LOGO PROCESS
+        Snack better, live better.
       </h3>
       
-      <p>
-        Tomato, Potato, and spinach...
-        <br>
-        Iconic flavors? Make it a cute, bright, mascot!
-      </p>
+      <h2>
+        MOCK-UPS
+      </h2>
       
-      <img width="70%" src="logoWips.PNG"  alt="placeholder">
-      
-      <div id="logoGrid">
-        <img class="logoContent" src="veggiestrawlogo.png" alt="placeholder">
-        <img class="logoContent" src="veggiestrawlogo.png" alt="placeholder">
-        <img class="logoContent" src="veggiestrawlogo.png" alt="placeholder">
-        <img class="logoContent" src="veggiestrawlogo.png" alt="placeholder">
+      <div id="mockUpGrid">
+        
+        <img class="packageContent" src="packageWIP1.png" alt="placeholder">
+        
       </div>
       
-      <h3>
-        SLOGAN
-      </h3>
       
-      <h1>
-        Snack better, live better.
-      </h1>
-    
       
-        <div class="content">   
-         
-        </div>
-
-
-         <div class="content-txt">
-   
   
-          <p>
-           
-          </p>
-     
-        </div>
+
+
+  
     </div>
     
   
