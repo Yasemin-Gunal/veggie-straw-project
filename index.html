@@ -80,43 +80,77 @@
       }
       
       
-      #titleGrid {
-        
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        margin: auto auto;
-      }
-      
-      .titleContent {
-        margin: auto auto;
-        width: 40%;
-        
-      }
  
       
       #logoGrid {
         display: grid;
         grid-template-columns: auto auto;
+        justify-content: center;
+        column-gap: 30px;
 
       }
       
       .logoContent {
         margin: auto auto;
-        width: 50%;
+        width: 350px;
         
       }
       
        #packageGrid {
         display: grid;
-        grid-template-columns: 33% 33% 33%;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        column-gap: 30px;
 
       }
       
       .packageContent {
         margin: 40px auto;
         
-        width: 50%;
+        width: 200px;
         
+      }
+      
+      #outerMUGrid {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+
+      }
+      
+      .outerMUContent {
+        margin: auto auto;
+      }
+      
+      .outerMUContent:first-child {
+        width: 100%;
+      }
+      
+      
+       #infoGrid {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        column-gap: 90px;
+
+
+      }
+      
+      .infoContent {
+        margin: 10px auto;
+        width: 500px
+      }
+      
+      
+       #mockUpGrid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+      }
+      
+      .mockUpContent {
+        margin: 10px auto;
+        width: 80%;
       }
       
       
@@ -236,16 +270,12 @@
     
     <div id="mainContent">
       
-      <div id="titleGrid">
-      <img src="OGLogo.jpeg" class="titleContent" alt="placeholder">
-      
-        <h1 id="veg" style="cursor:pointer;">
+     
+        <h1 id="yeg" style="cursor:pointer;">
           RE-BRAND PROJECT
         </h1>
       
-      <img src="fullLogo.png" class="titleContent" alt="placeholder">
-      </div>
-      
+
        <p>
         I was tasked to create an entirely new brand for the product Garden Veggie Straws.
       </p>
@@ -290,48 +320,66 @@
         <img src="packageRedesign.png" height="70%" alt="placeholder">
       </div> 
       
-      
-      <h2>
-        THE BIG IDEA
-      </h2>
-          
-      <h3 style=" color: #65FFDB;">
-        "SECRETLY HEALTHY"
-      </h3>
-      
-      <p>
-        Garden Veggie Straws are going off of the idea that they are a healthier replacement for your average junk food snack (mainly potato chips.)
-         <br><br>
-        This means the product must scratch that junk food itch- in other words it must still taste like junk food. The idea of "secretly" healthy is that this is a healthy snack that doesn't taste like a healthy snack, hence the secrecy. 
-      </p>
-      
-      <div id="brandStory">
+      <div id="infoGrid">
+        
+        <div class="infoContent">
         <h2>
-          BRAND STORY
+          THE BIG IDEA
         </h2>
+        <h3 style=" color: #65FFDB;">
+          "SECRETLY HEALTHY"
+        </h3>
         <p>
-          Tricking your kid into eating healthy is a struggle for many parents. Lets can we encourage healthy habits in secret.
+          Garden Veggie Straws are going off of the idea that they are a healthier replacement for your average junk food snack (mainly potato chips.)
+           <br><br>
+          This means the product must scratch that junk food itch- in other words it must still taste like junk food. The idea of "secretly" healthy is that this is a healthy snack that doesn't taste like a healthy snack, hence the secrecy. 
         </p>
-      </div>
-      
+        </div>
+
+        <div class="infoContent">
+
         <h2>
-        SLOGAN
-      </h2>
-      
-      <h3>
-        Snack better, live better.
-      </h3>
+          SLOGAN
+        </h2>
+        <h3>
+          Snack better, live better.
+        </h3>
+          
+        <div id="brandStory">
+          <h2>
+            BRAND STORY
+          </h2>
+          <p>
+            Tricking your kid into eating healthy is a struggle for many parents. Lets can we encourage healthy habits in secret.
+          </p>
+        </div> 
+        
+      </div>
+      </div>
       
       <h2>
         MOCK-UPS
       </h2>
       
-      <div id="mockUpGrid">
-        
-        <img class="packageContent" src="packageWIP1.png" alt="placeholder">
-        
+      <p>
+        Various mock-ups of potential merchandise and products with the updated designs, created by AI. 
+      </p>
+      
+      <div id="outerMUGrid">
+      
+      <div class="outerMUContent">
+        <img class="mockUpContent" src="productMU.png" alt="placeholder" >
       </div>
       
+      <div id="mockUpGrid" class="outerMUContent">
+         <img class="mockUpContent" src="bagMU.png" alt="placeholder">
+         <img class="mockUpContent" src="forkMU.png" alt="placeholder">
+         <img class="mockUpContent" src="keychainMU.png" alt="placeholder">
+         <img class="mockUpContent" src="shirtsMU.png" alt="placeholder">
+         <img class="mockUpContent" src="toothbrushMU.png" alt="placeholder">
+        
+      </div>
+      </div>
       
       
   
