@@ -40,7 +40,6 @@
         display: inline; 
         margin: 0 50px 0 0px;
         position: relative;
-        /*border: 1px solid red;*/
         top: 10px;
         cursor: pointer;
       }
@@ -53,14 +52,12 @@
         font-family: Koho; 
         color: #CC2F5C;
         font-size: 65px;
-/*         width: 50%; */
       }
       
         h3 {
         font-family: Koho; 
         color: #65FFDB;
         font-size: 45px;
-/*         width: 50%; */
       }
       
       
@@ -291,15 +288,13 @@
       </ul>
      </div>
     
-    <img src="aboutMeAva.png" id="avatar" width="150px" alt="cartoon drawing of 'Yasemin Gunal' commenting on their profile"> <!--I wanted to specify what each image was saying but due to the way i made this, no matter what image shows it will deliver the same alt tag -->
+    <img src="brighterAva.png" id="avatar" width="150px" alt="cartoon drawing of 'Yasemin Gunal' commenting on their profile"> <!--I wanted to specify what each image was saying but due to the way i made this, no matter what image shows it will deliver the same alt tag -->
     
-    
-  
     
     <div id="mainContent">
       
      
-        <h1 id="yeg" style="cursor:pointer;">
+        <h1 id="rebrandTxt" style="cursor:pointer;">
           RE-BRAND PROJECT
         </h1>
       
@@ -314,7 +309,7 @@
       
       <div id="OGsGrid">
         
-        <img class="OGsContent" src="OGPackage.png" alt="placeholder">
+        <img class="OGsContent" id="ogBag" style="cursor:pointer;" src="OGPackage.png" alt="placeholder">
         
         <div class="OGsContent">
           
@@ -500,13 +495,13 @@
 
   // assign click events
     
-  document.getElementById('aboutmetxt').addEventListener('click', () => {
-  avatarImg.src = '2clickAboutMe.png';
+  document.getElementById('ogBag').addEventListener('click', () => {
+  avatarImg.src = 'actuallyAva.png';
   });
     
-  document.getElementById('yeg').addEventListener('click', (e) => {
+  document.getElementById('rebrandTxt').addEventListener('click', (e) => {
   e.stopPropagation();  
-  avatarImg.src = 'yegava.png';
+  avatarImg.src = 'brighterAva.png';
   });
   
   document.getElementById('avatar').addEventListener('click', (e) => {
@@ -514,12 +509,6 @@
   avatarImg.src = 'hideAva.png';
   });
     
-  document.getElementById('meImg').addEventListener('click', (e) => {
-  e.stopPropagation();  
-  avatarImg.src = 'itsMeAva.png';
-  });
-    
- 
  
 
 </script>
