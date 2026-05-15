@@ -47,6 +47,15 @@
       #header li:hover {
           color: #CC2F5C;
       }
+      
+       #header a:hover {
+          color: #CC2F5C;
+      }
+      
+      #header a {
+        color: #282342;
+        text-decoration: none;
+      }
         
       h2 {
         font-family: Koho; 
@@ -259,7 +268,6 @@
         right: 0px;           
         z-index: 1000;
         cursor: pointer;
-        
       }
     
     </style>
@@ -269,21 +277,21 @@
   <body>
     
     
-    <div id="header">
+  <div id="header">
       <ul>
         <b>
-        <li id="hometxt">HOME</li>
-        <li id="aboutmetxt" style="color:#CC2F5C;">ABOUT ME</li>
-        <li class="dropdown" id="worktxt">
-          WORK
-        <ul class="dropdown-menu">
-          <li><a href="#">DIGITAL</a></li>
-          <li><a href="#">TRADITIONAL</a></li>
-          <li><a href="#">PAID WORK</a></li>
-          <li><a href="#">PROJECTS</a></li>
-        </ul>
-        </li>
-        <li id="resumetxt">RESUME</li>
+        <li id="hometxt"><a href="homePage.html">HOME</a></li>
+        <li id="aboutmetxt"><a href="aboutMePage.html">ABOUT ME</a></li>
+        <li id="worktxt" class="dropdown">
+          <a href="workPage.html" style="color:#CC2F5C;">WORK</a>
+          <ul class="dropdown-menu">
+            <li ><a href="workPage.html#digitalEnter">DIGITAL</a></li>
+            <li ><a href="workPage.html#tradEnter">TRADITIONAL</a></li>
+            <li ><a href="workPage.html#paidEnter">PAID WORK</a></li>
+            <li ><a href="workPage.html#projectEnter">PROJECTS</a></li>
+          </ul>
+          </li>
+          <li id="resumetxt"><a href="resumePage.html">RESUME</a></li>
         </b>
       </ul>
      </div>
